@@ -1,0 +1,19 @@
+nest new nomprojet
+
+--Installation typeorm--
+npm install --save typeorm mssql
+npm i @nestjs/typeorm
+
+--Installation Validation DTO--
+
+npm i class-validator
+npm i class-transformer
+
+
+--Installation Swagger--
+npm i @nestjs/swagger
+
+ajouter dans main.ts
+
+const document = SwaggerModule.createDocument(app, config);
+SwaggerModule.setup('api',app, document);
